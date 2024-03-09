@@ -1,0 +1,33 @@
+main {
+  min-width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+}
+
+* {
+  margin: 0;
+}
+
+
+.ball {
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  background-color: #646cff;
+  will-change: transform;
+  transition: transform 300ms;
+  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
+}
+
+.ball::before {
+  content: '👀';
+}
