@@ -1,0 +1,18 @@
+.wrapper-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.movies {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.2rem;
+  padding: 1rem;
+}
+
+.movie {
+  align-items: stretch;
+  display: grid;
+}
+
